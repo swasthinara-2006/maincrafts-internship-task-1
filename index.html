@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAINCRAFTS | Crafting Digital Experiences</title>
+  <meta name="description" content="MAINCRAFTS is a modern digital development studio crafting responsive, high-performance, and beautifully designed web experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambient & Light Streaks -->
+  <div class="bg-canvas" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="light-streak light-streak-1"></div>
+    <div class="light-streak light-streak-2"></div>
+    <div class="light-streak light-streak-3"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="#home" class="logo-group" aria-label="MAINCRAFTS Home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <path d="M8 32V8L20 20L32 8V32" stroke="url(#logo-grad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="20" r="3" fill="#00d2ff"/>
+            <defs>
+              <linearGradient id="logo-grad" x1="8" y1="8" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00d2ff"/>
+                <stop offset="0.5" stop-color="#6366f1"/>
+                <stop offset="1" stop-color="#8b5cf6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo-text">MAINCRAFTS</span>
+      </a>
+
+      <!-- CSS-only Mobile Hamburger Menu Checkbox -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="nav-content">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta-btn">
+          <span>Start Building</span>
+          <svg class="cta-arrow" viewBox="0 0 16 16" fill="none" width="14" height="14">
+            <path d="M3.33337 8H12.6667M12.6667 8L8.00004 3.33334M12.6667 8L8.00004 12.6667" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="hero-container">
+        
+        <!-- Left Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-text">✦ WEB DEVELOPMENT INTERNSHIP</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-line title-line-1"><span class="line-inner">WE CRAFT</span></span>
+            <span class="title-line title-line-2"><span class="line-inner gradient-text">DIGITAL</span></span>
+            <span class="title-line title-line-3"><span class="line-inner">EXPERIENCES</span></span>
+          </h1>
+
+          <p class="hero-description">
+            Modern interfaces. Responsive experiences. Thoughtful design. 
+            We transform ideas into digital experiences that people remember.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary">
+              <span class="btn-text">Start Building</span>
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="none" width="18" height="18">
+                <path d="M4.16663 10H15.8333M15.8333 10L10 4.16666M15.8333 10L10 15.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#features" class="btn-secondary">
+              <span class="btn-text">Explore Features</span>
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="none" width="18" height="18">
+                <path d="M10 4.16666V15.8333M10 15.8333L15.8333 10M10 15.8333L4.16663 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Digital Blueprint Visual -->
+        <div class="hero-visual">
+          <div class="blueprint-frame">
+            
+            <!-- Blueprint Header / Metadata -->
+            <div class="blueprint-header">
+              <div class="blueprint-tag">ARCH_SYS // V2.026</div>
+              <div class="blueprint-coords">LAT: 37.7749 • LNG: -122.4194</div>
+              <div class="blueprint-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+            </div>
+
+            <!-- Interactive Blueprint Canvas -->
+            <div class="blueprint-canvas">
+              <!-- Grid background pattern overlay inside blueprint -->
+              <div class="blueprint-grid-bg"></div>
+
+              <!-- SVG Animated Connection Paths -->
+              <svg class="blueprint-svg-lines" viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Outer Bounding Paths -->
+                <rect x="15" y="15" width="370" height="290" rx="8" stroke="rgba(0, 210, 255, 0.15)" stroke-width="1.5" stroke-dasharray="6 6" class="anim-dash"/>
+                
+                <!-- Connecting Rays -->
+                <path d="M60 70 L200 160 M340 70 L200 160 M60 250 L200 160 M340 250 L200 160" stroke="url(#line-grad)" stroke-width="1.5" stroke-dasharray="200" stroke-dashoffset="200" class="anim-path"/>
+                
+                <!-- Node Ring -->
+                <circle cx="200" cy="160" r="48" stroke="rgba(0, 210, 255, 0.3)" stroke-width="1.5" stroke-dasharray="4 4" class="anim-spin-ring"/>
+                
+                <defs>
+                  <linearGradient id="line-grad" x1="0" y1="0" x2="400" y2="320" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00d2ff"/>
+                    <stop offset="0.5" stop-color="#6366f1"/>
+                    <stop offset="1" stop-color="#8b5cf6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <!-- Corner Markers -->
+              <span class="corner-marker top-left">+</span>
+              <span class="corner-marker top-right">+</span>
+              <span class="corner-marker bottom-left">+</span>
+              <span class="corner-marker bottom-right">+</span>
+
+              <!-- Floating Tech Labels & Nodes -->
+              <div class="blueprint-node node-tl">
+                <span class="node-pulse"></span>
+                <span class="node-label">&lt; HTML5 /&gt;</span>
+              </div>
+
+              <div class="blueprint-node node-tr">
+                <span class="node-pulse"></span>
+                <span class="node-label">&lt; CSS3 /&gt;</span>
+              </div>
+
+              <div class="blueprint-node node-bl">
+                <span class="node-pulse"></span>
+                <span class="node-label">RESPONSIVE</span>
+              </div>
+
+              <div class="blueprint-node node-br">
+                <span class="node-pulse"></span>
+                <span class="node-label">UI / UX</span>
+              </div>
+
+              <!-- Floating Secondary Info Cards -->
+              <div class="blueprint-floating-card card-top">
+                <span class="card-status-indicator"></span>
+                <span class="card-code-text">SYSTEM_READY</span>
+              </div>
+
+              <div class="blueprint-floating-card card-bottom">
+                <span class="card-code-text">BUILD_2026</span>
+                <span class="card-mini-bar"></span>
+              </div>
+
+              <!-- Central CORE Component -->
+              <div class="blueprint-core">
+                <div class="core-outer-ring"></div>
+                <div class="core-scan-line"></div>
+                <div class="core-inner">
+                  <div class="core-title">CORE</div>
+                  <div class="core-status">
+                    <span class="status-indicator"></span>
+                    <span class="status-text-offline">OFFLINE</span>
+                    <span class="status-text-online">ONLINE</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Blueprint Footer Meta -->
+            <div class="blueprint-footer">
+              <div class="meta-item">
+                <span class="meta-key">ENGINE:</span>
+                <span class="meta-val">PURE CSS3</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-key">STATE:</span>
+                <span class="meta-val highlight">ACTIVE_DEPLOY</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section id="features" class="features-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">CAPABILITIES</span>
+          <h2 class="section-title">BUILT FOR THE MODERN WEB</h2>
+          <p class="section-description">
+            Everything needed to transform an idea into a polished digital experience.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          
+          <!-- FEATURE 01 -->
+          <article class="feature-card card-1">
+            <div class="card-border-glow"></div>
+            <div class="card-sweep"></div>
+            <div class="card-header">
+              <span class="card-number">01</span>
+              <div class="icon-wrapper icon-code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <div class="scan-beam"></div>
+              </div>
+            </div>
+            <h3 class="card-title">CLEAN DEVELOPMENT</h3>
+            <p class="card-text">
+              Semantic HTML5 structure and organized CSS for maintainable websites.
+            </p>
+            <div class="card-footer">
+              <span class="card-action">Learn More</span>
+              <svg class="card-arrow" viewBox="0 0 16 16" fill="none" width="16" height="16">
+                <path d="M3.33337 8H12.6667M12.6667 8L8.00004 3.33334M12.6667 8L8.00004 12.6667" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </article>
+
+          <!-- FEATURE 02 -->
+          <article class="feature-card card-2">
+            <div class="card-border-glow"></div>
+            <div class="card-sweep"></div>
+            <div class="card-header">
+              <span class="card-number">02</span>
+              <div class="icon-wrapper icon-palette">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
+                  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.92 0 1.7-.72 1.7-1.65 0-.43-.17-.83-.46-1.13-.29-.3-.46-.7-.46-1.13 0-.92.77-1.69 1.7-1.69h2.22C19.8 16.4 22 14.2 22 11.5 22 6.3 17.5 2 12 2z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="card-title">MODERN DESIGN</h3>
+            <p class="card-text">
+              Beautiful layouts, gradients, typography and visual details designed to stand out.
+            </p>
+            <div class="card-footer">
+              <span class="card-action">Learn More</span>
+              <svg class="card-arrow" viewBox="0 0 16 16" fill="none" width="16" height="16">
+                <path d="M3.33337 8H12.6667M12.6667 8L8.00004 3.33334M12.6667 8L8.00004 12.6667" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </article>
+
+          <!-- FEATURE 03 -->
+          <article class="feature-card card-3">
+            <div class="card-border-glow"></div>
+            <div class="card-sweep"></div>
+            <div class="card-header">
+              <span class="card-number">03</span>
+              <div class="icon-wrapper icon-phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="card-title">RESPONSIVE BY DEFAULT</h3>
+            <p class="card-text">
+              Experiences that adapt beautifully across desktop, tablet and mobile screens.
+            </p>
+            <div class="card-footer">
+              <span class="card-action">Learn More</span>
+              <svg class="card-arrow" viewBox="0 0 16 16" fill="none" width="16" height="16">
+                <path d="M3.33337 8H12.6667M12.6667 8L8.00004 3.33334M12.6667 8L8.00004 12.6667" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </article>
+
+          <!-- FEATURE 04 -->
+          <article class="feature-card card-4">
+            <div class="card-border-glow"></div>
+            <div class="card-sweep"></div>
+            <div class="card-header">
+              <span class="card-number">04</span>
+              <div class="icon-wrapper icon-rocket">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
+                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                  <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-3.05 11a22.35 22.35 0 0 1-3.95 2z"></path>
+                  <path d="M9 12l-6 6"></path>
+                  <path d="M15 9l6 6"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="card-title">PERFORMANCE MINDED</h3>
+            <p class="card-text">
+              Lightweight front-end architecture focused on speed, usability and simplicity.
+            </p>
+            <div class="card-footer">
+              <span class="card-action">Learn More</span>
+              <svg class="card-arrow" viewBox="0 0 16 16" fill="none" width="16" height="16">
+                <path d="M3.33337 8H12.6667M12.6667 8L8.00004 3.33334M12.6667 8L8.00004 12.6667" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & PIPELINE SECTION -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        
+        <div class="about-header text-center">
+          <span class="section-badge">METHODOLOGY</span>
+          <h2 class="section-title">FROM IDEA TO IMPACT</h2>
+          <p class="section-description max-w-2xl">
+            Great digital experiences begin with a simple idea. 
+            Through clean structure, thoughtful design and responsive technology, 
+            that idea can become something people actually enjoy using.
+          </p>
+        </div>
+
+        <!-- Production Pipeline Visual -->
+        <div class="pipeline-wrapper">
+          <div class="pipeline-track">
+            <!-- Animated Light Pulse Signal -->
+            <div class="pipeline-signal"></div>
+          </div>
+
+          <div class="pipeline-nodes">
+            
+            <!-- NODE 1 -->
+            <div class="pipeline-node node-1">
+              <div class="node-ring">
+                <span class="node-core"></span>
+              </div>
+              <div class="node-content">
+                <span class="node-step">STAGE 01</span>
+                <h3 class="node-title">IDEA</h3>
+                <p class="node-desc">Conceptualizing core goals & layout blueprints.</p>
+              </div>
+            </div>
+
+            <!-- NODE 2 -->
+            <div class="pipeline-node node-2">
+              <div class="node-ring">
+                <span class="node-core"></span>
+              </div>
+              <div class="node-content">
+                <span class="node-step">STAGE 02</span>
+                <h3 class="node-title">DESIGN</h3>
+                <p class="node-desc">Crafting responsive, high-contrast UI details.</p>
+              </div>
+            </div>
+
+            <!-- NODE 3 -->
+            <div class="pipeline-node node-3">
+              <div class="node-ring">
+                <span class="node-core"></span>
+              </div>
+              <div class="node-content">
+                <span class="node-step">STAGE 03</span>
+                <h3 class="node-title">BUILD</h3>
+                <p class="node-desc">Writing clean, semantic HTML5 & CSS3 code.</p>
+              </div>
+            </div>
+
+            <!-- NODE 4 -->
+            <div class="pipeline-node node-4">
+              <div class="node-ring">
+                <span class="node-core"></span>
+              </div>
+              <div class="node-content">
+                <span class="node-step">STAGE 04</span>
+                <h3 class="node-title">LAUNCH</h3>
+                <p class="node-desc">Deploying smooth, performant digital assets.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Creative Stats Initialization Section -->
+        <div class="stats-grid">
+          
+          <div class="stat-card">
+            <div class="stat-visual">
+              <div class="counter-display percent-counter">
+                <span class="counter-seq">0%</span>
+                <span class="counter-seq">25%</span>
+                <span class="counter-seq">50%</span>
+                <span class="counter-seq">75%</span>
+                <span class="counter-final">100%</span>
+              </div>
+            </div>
+            <div class="stat-label">RESPONSIVE</div>
+            <div class="stat-sub">Cross-device fluidity</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-visual">
+              <div class="code-counter">
+                <span class="code-tag">&lt;HTML5&gt;</span>
+              </div>
+            </div>
+            <div class="stat-label">SEMANTIC</div>
+            <div class="stat-sub">Structured architecture</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-visual">
+              <div class="code-counter">
+                <span class="code-tag">CSS3</span>
+              </div>
+            </div>
+            <div class="stat-label">MODERN</div>
+            <div class="stat-sub">Keyframes & Flexbox/Grid</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION SECTION -->
+    <section id="contact" class="cta-section">
+      <div class="section-container">
+        
+        <div class="cta-window">
+          <!-- Window Decorative Borders & Corner Markers -->
+          <span class="cta-corner cta-tl"></span>
+          <span class="cta-corner cta-tr"></span>
+          <span class="cta-corner cta-bl"></span>
+          <span class="cta-corner cta-br"></span>
+
+          <!-- Scanning Line Effect -->
+          <div class="cta-scan-line"></div>
+
+          <!-- Metadata Labels -->
+          <div class="cta-meta-top">
+            <span class="meta-pill">READY_STATE</span>
+            <span class="meta-pill">SYSTEM_ACTIVE</span>
+            <span class="meta-pill">BUILD_NEXT</span>
+          </div>
+
+          <div class="cta-content">
+            <h2 class="cta-title">
+              READY TO BUILD<br>
+              <span class="gradient-text">SOMETHING AMAZING?</span>
+            </h2>
+            
+            <p class="cta-description">
+              Turn your next idea into a digital experience worth remembering.
+            </p>
+
+            <a href="#home" class="btn-primary btn-cta">
+              <span class="btn-light-sweep"></span>
+              <span class="btn-text">Get Started</span>
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="none" width="18" height="18">
+                <path d="M4.16663 10H15.8333M15.8333 10L10 4.16666M15.8333 10L10 15.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo-group">
+            <span class="logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" width="28" height="28">
+                <path d="M8 32V8L20 20L32 8V32" stroke="url(#footer-logo-grad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="20" cy="20" r="3" fill="#00d2ff"/>
+                <defs>
+                  <linearGradient id="footer-logo-grad" x1="8" y1="8" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00d2ff"/>
+                    <stop offset="0.5" stop-color="#6366f1"/>
+                    <stop offset="1" stop-color="#8b5cf6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <span class="logo-text">MAINCRAFTS</span>
+          </a>
+          <p class="footer-tagline">
+            Crafting digital experiences with clean code and thoughtful design.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-status-group">
+          <h4 class="footer-heading">System Telemetry</h4>
+          <div class="system-status">
+            <span class="status-pulse-dot"></span>
+            <span class="status-label">SYSTEM ONLINE</span>
+          </div>
+          <div class="social-links">
+            <a href="#home" class="social-icon" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="#home" class="social-icon" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#home" class="social-icon" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">&copy; 2026 MainCrafts. All Rights Reserved.</p>
+        <span class="task-tag">TASK 1 // WEB DEVELOPMENT INTERNSHIP</span>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
